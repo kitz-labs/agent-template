@@ -7,6 +7,12 @@
 </p>
 
 <p align="center">
+  <a href="https://kitzlabs.ai">
+    <img alt="Visit kitzlabs.ai" src="https://img.shields.io/badge/Visit-kitzlabs.ai-111827?style=for-the-badge" />
+  </a>
+</p>
+
+<p align="center">
   <a href="bitcoin:37Ndnsy6GcNWCZjX4aDmtSBBzaehpkkuNA">
     <img alt="Buy me a coffee with Bitcoin" src="https://img.shields.io/badge/☕%20Buy%20me%20a%20coffee-Bitcoin-F7931A?style=for-the-badge" />
   </a>
