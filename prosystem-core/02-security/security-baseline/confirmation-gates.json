@@ -1,0 +1,7 @@
+{
+  "default_decision": "deny",
+  "require_confirmation_for": ["payments","refunds","dns_changes","domain_changes","database_writes","production_deploy","server_restart","nginx_reload","file_delete","environment_change","secret_rotation","customer_data_export"],
+  "approval_record_required": true,
+  "approval_record_fields": ["action","target","risk","rollback","exact_command_or_tool","expected_result"],
+  "expired_or_ambiguous_approval": "deny"
+}

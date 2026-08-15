@@ -1,0 +1,7 @@
+{
+  "read-only": {"write_access":false,"destructive_access":false,"production_deploy":false,"requires_confirmation_for_writes":true},
+  "safe-write": {"write_access":true,"destructive_access":false,"production_deploy":false,"requires_confirmation_for_writes":false,"constraints":["bounded target","reversible change","no secrets","no privileged infrastructure mutation"]},
+  "restricted-write": {"write_access":true,"destructive_access":false,"production_deploy":false,"requires_confirmation_for_writes":true},
+  "deployment": {"write_access":true,"destructive_access":false,"production_deploy":true,"requires_confirmation_for_writes":true,"requirements":["backup_or_rollback","health_check","smoke_test","explicit_target"]},
+  "administrator": {"write_access":true,"destructive_access":true,"production_deploy":true,"requires_confirmation_for_writes":true,"auto_assignment":false,"human_approval_required":true}
+}

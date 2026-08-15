@@ -1,0 +1,6 @@
+{
+  "low": {"confirmation_default": false, "examples": ["read-only research", "formatting", "classification"]},
+  "medium": {"confirmation_default": true, "examples": ["planning with external context", "non-production configuration"]},
+  "high": {"confirmation_default": true, "write_access_default": false, "examples": ["server operations", "code writes", "customer-impacting automation"]},
+  "critical": {"confirmation_default": true, "write_access_default": false, "examples": ["payments", "dns", "database destructive actions", "production deployment"]}
+}

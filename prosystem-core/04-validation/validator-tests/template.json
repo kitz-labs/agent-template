@@ -1,0 +1,9 @@
+{
+  "id": "validator-tests",
+  "version": "1.0.0",
+  "status": "stable",
+  "risk": "medium",
+  "owner": "prosystem-quality",
+  "description": "Mandatory structural, dependency, security and secret validation contract.",
+  "required_files": ["template.json","VALIDATION_STANDARD.md","TEST_MATRIX.md","CHECKLIST.md"]
+}

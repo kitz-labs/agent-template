@@ -1,0 +1,81 @@
+schema: 1
+id: {{AGENT_ID}}
+name: {{AGENT_NAME}}
+title: {{AGENT_TITLE}}
+version: {{VERSION}}
+status: configured
+category: {{CATEGORY}}
+purpose: {{PURPOSE}}
+responsibilities: []
+goals: []
+non_goals: []
+profiles:
+  model: standard
+  tools: restricted
+  memory: session
+  permissions: read-only
+workflows: []
+handoffs:
+  allowed_to: []
+  receives_from: []
+  protocol: schemas/handoff.schema.json
+  max_context_chars: 12000
+  full_history: false
+  required_fields:
+    - objective
+    - context
+    - constraints
+    - completed_work
+    - artifacts
+    - risks
+    - expected_output
+    - approval_state
+runtime:
+  timeout_seconds: 300
+  max_retries: 1
+  concurrency: 1
+  approval_mode: policy
+  idempotency_required_for_side_effects: true
+budget:
+  max_cost_per_task_usd: 1.0
+  max_tokens: 16000
+  hard_stop: true
+quality:
+  min_confidence: 0.85
+  require_self_check: true
+  require_evidence_for_completion: true
+  eval_suite: tests.yaml
+security:
+  risk: high
+  deny_wins: true
+  external_input_untrusted: true
+  secrets_in_prompt_or_config: false
+memory:
+  profile: session
+  write_requires_provenance: true
+  cross_client: deny
+outputs:
+  default: structured_markdown
+  handoff_schema: schemas/handoff.schema.json
+  task_result_schema: schemas/task-result.schema.json
+escalation:
+  on:
+    - permission_denied
+    - approval_required
+    - budget_exceeded
+    - security_conflict
+    - low_confidence
+    - unknown_side_effect_state
+  to: master
+mcp_profile: restricted
+learning:
+  mode: controlled
+  memory_distillation: false
+  auto_promote_low_risk: false
+  security_self_modification: false
+optimization:
+  budget_class: standard
+  bounded_context: true
+  deterministic_first: true
+  cache_safe_reads: true
+  max_tool_calls: 12

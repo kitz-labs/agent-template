@@ -1,0 +1,14 @@
+schema: 1
+suite: {{AGENT_NAME}}-core
+required:
+  - config-valid
+  - happy-path
+  - permission-denied
+  - approval-required
+  - tool-failure
+  - timeout-retry
+  - handoff-contract
+  - security-regression
+release_gate:
+  all_required_must_pass: true
+  unresolved_critical_findings: 0

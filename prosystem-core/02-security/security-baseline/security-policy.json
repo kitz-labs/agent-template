@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "default_decision": "deny",
+  "deny_wins": true,
+  "external_input_untrusted": true,
+  "secrets_in_prompt_or_config": false,
+  "least_privilege_required": true,
+  "idempotency_required_for_side_effects": true,
+  "risk_levels": ["low","medium","high","critical"],
+  "confirmation_required_for": ["payments","refunds","dns_changes","database_writes","production_deploy","service_restart","nginx_reload","file_delete","env_change","secret_rotation","customer_data_export"],
+  "forbidden_without_explicit_chef_approval": ["payment_capture","refund_create","dns_delete","database_drop","unrestricted_shell","recursive_delete","world_writable_permissions","secret_print","environment_print"],
+  "approval_payload_required_fields": ["action","target","risk","rollback","exact_command_or_tool","expected_result"],
+  "cross_client_memory": "deny",
+  "unknown_side_effect_state": "escalate"
+}

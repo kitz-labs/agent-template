@@ -1,0 +1,9 @@
+{
+  "id": "core-standard",
+  "version": "1.0.0",
+  "status": "stable",
+  "risk": "low",
+  "owner": "prosystem-platform",
+  "description": "Mandatory governance contract for all Pro System templates.",
+  "required_files": ["template.json","CORE_STANDARD.md","NAMING.md","VERSIONING.md","LIFECYCLE.md","QUALITY_GATES.md","COMPOSITION.md","template.schema.json","CHECKLIST.md"]
+}

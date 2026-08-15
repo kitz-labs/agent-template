@@ -1,0 +1,7 @@
+{
+  "selected_conflict": "error",
+  "unknown_conflict_target": "error",
+  "security_conflict_resolution": "stricter-wins",
+  "permission_conflict_resolution": "deny-wins",
+  "automatic_override": false
+}

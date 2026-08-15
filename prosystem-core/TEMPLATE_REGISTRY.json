@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "core_version": "1.0.0",
+  "policy": {
+    "default_decision": "deny",
+    "stable_only_for_production": true,
+    "dependency_closure_required": true,
+    "conflicts_block_composition": true,
+    "validation_required_before_release": true
+  },
+  "templates": {
+    "core-standard": {"version":"1.0.0","status":"stable","path":"00-core/core-standard","risk":"low","kind":"core-standard","dependencies":[],"conflicts":[]},
+    "security-baseline": {"version":"1.0.0","status":"stable","path":"02-security/security-baseline","risk":"critical","kind":"security-baseline","dependencies":["core-standard"],"conflicts":[]},
+    "registry-dependencies": {"version":"1.0.0","status":"stable","path":"03-registry/registry-dependencies","risk":"medium","kind":"registry","dependencies":["core-standard"],"conflicts":[]},
+    "validator-tests": {"version":"1.0.0","status":"stable","path":"04-validation/validator-tests","risk":"medium","kind":"validator","dependencies":["core-standard","security-baseline","registry-dependencies"],"conflicts":[]},
+    "production-agent": {"version":"1.0.0","status":"stable","path":"01-agents/production-agent","risk":"high","kind":"production-agent","dependencies":["core-standard","security-baseline","registry-dependencies","validator-tests"],"conflicts":[]}
+  }
+}

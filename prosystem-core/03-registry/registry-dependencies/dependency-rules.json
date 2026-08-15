@@ -1,0 +1,9 @@
+{
+  "unknown_dependency": "error",
+  "dependency_cycle": "error",
+  "missing_selected_dependency": "error",
+  "duplicate_dependency": "error",
+  "self_dependency": "error",
+  "resolution_order": "dependencies-first",
+  "production_requires_full_closure": true
+}

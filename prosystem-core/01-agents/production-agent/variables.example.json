@@ -1,0 +1,10 @@
+{
+  "AGENT_ID": "AGENT-EXAMPLE",
+  "AGENT_NAME": "example",
+  "AGENT_TITLE": "Example Agent",
+  "VERSION": "1.0.0",
+  "CATEGORY": "engineering",
+  "PURPOSE": "One clear sentence describing the agent purpose.",
+  "RESPONSIBILITIES": "- Responsibility one",
+  "NON_GOALS": "- Explicit non-goal"
+}

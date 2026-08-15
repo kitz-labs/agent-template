@@ -1,0 +1,9 @@
+{
+  "id": "security-baseline",
+  "version": "1.0.0",
+  "status": "stable",
+  "risk": "critical",
+  "owner": "prosystem-security",
+  "description": "Mandatory deny-by-default security and permission baseline.",
+  "required_files": ["template.json","SECURITY_BASELINE.md","security-policy.json","permission-profiles.json","risk-matrix.json","confirmation-gates.json","SECRET_POLICY.md","CHECKLIST.md"]
+}

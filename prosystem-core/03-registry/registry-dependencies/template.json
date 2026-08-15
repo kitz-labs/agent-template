@@ -1,0 +1,9 @@
+{
+  "id": "registry-dependencies",
+  "version": "1.0.0",
+  "status": "stable",
+  "risk": "medium",
+  "owner": "prosystem-platform",
+  "description": "Authoritative registry, dependency graph and conflict contract.",
+  "required_files": ["template.json","REGISTRY_STANDARD.md","dependency-rules.json","conflict-rules.json","CHECKLIST.md"]
+}

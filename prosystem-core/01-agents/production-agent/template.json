@@ -1,0 +1,9 @@
+{
+  "id": "production-agent",
+  "version": "1.0.0",
+  "status": "stable",
+  "risk": "high",
+  "owner": "prosystem-agent-platform",
+  "description": "Complete Pro System production agent source template.",
+  "required_files": ["template.json","AGENT.md","agent.yaml","AGENTS.md","APPROVALS.md","CONTRACT.md","DEPENDENCIES.md","EFFICIENCY.md","ERRORS.md","EVALS.md","GOALS.md","HANDOFFS.md","LEARNING.md","LIFECYCLE.md","MCP.md","MEMORY.md","OBSERVABILITY.md","OUTPUT.md","PERMISSIONS.md","prompt.md","README.md","ROLE.md","RULES.md","SECURITY.md","SYSTEM.md","TESTS.md","tests.yaml","TOOLS.md","WORKFLOWS.md","variables.example.json","CHECKLIST.md"]
+}
